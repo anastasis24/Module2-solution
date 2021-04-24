@@ -1,0 +1,94 @@
+*{
+	box-sizing:border-box;
+	    font-family:Courier New;
+
+}
+h1{
+	text-align: center;
+}
+section{
+	border:2px solid black;
+	width: 30%;
+	float:left;
+	position: relative;
+	padding: 10px;
+	padding-top:60px;
+	background-color: grey;
+	margin :10px;
+	
+}
+span{
+	border:2px solid black;
+	border-top:0px solid black ;
+	border-right:0px solid black ;
+	position:absolute;
+	width: 40%;
+	height: 30%;
+	left:100;
+	top: 0;
+	bottom: 0;
+	right:0;
+}
+.chicken span{
+	background-color: pink;
+}
+.beef span{
+	background-color: red;
+
+}
+.shushi span{
+	background-color: yellow;
+}
+
+.dish{
+	text-align:center;
+}
+
+/* */ 
+@media  (min-width: 768px) and (max-width: 991px) {
+	section{
+		float:left;
+		
+	}
+	.chicken span {
+		width:30%;
+		height: 20%;
+	}
+
+	.beef span {
+		width:30%;
+		height: 20%;
+	}
+
+	.shushi span{
+		width:30%;
+		height: 30%;
+	}
+	section.chicken{
+		width: 45%;
+
+	}
+	section.beef{
+		width: 45%;
+	}
+	section.shushi{
+		width: 92%;
+	}
+
+}
+
+@media  (max-width: 767px){
+section{
+		float:left;
+	}
+	section.chicken{
+		width: 100%;
+	}
+	section.beef{
+		width: 100%;
+	}
+	section.shushi{
+		width: 100%;
+	}
+
+}
